@@ -140,7 +140,7 @@ gulp.task('img', gulp.series(gulp.parallel('img-responsive', 'svg'), bsReload));
 
 // Clean @*x IMG's
 gulp.task('cleanimg', function () {
-	return del(['app/img/@*'], {
+	return del(['app/img/@*', 'app/img/svg'], {
 		force: true
 	})
 });
